@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.android.project5.project5.MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Navraj Singh Kaler"
+        android:id="@+id/tv_name"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+
+        <TextView
+            style="@style/StyleTV"
+            android:text="Subject Name"
+            android:id="@+id/tv_subject"
+            />
+
+        <TextView
+            style="@style/StyleTV"
+            android:id="@+id/tv_marks"
+            android:text="Marks"/>
+
+        <TextView
+            style="@style/StyleTV"
+            android:text="Grade"
+            android:id="@+id/tv_grade"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/lv_report"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
